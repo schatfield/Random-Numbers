@@ -15,21 +15,18 @@ numbers_1_to_10 = range(1, 11)
 for number in numbers_1_to_10:
     the_numbers_match = False
 
-    if (the_numbers_match == False):
-        print (f'{number} is not the random list')
-    else:
-        print(f'{number} is in the random list')
+    # Iterate your random number list here with 'for' loop. Where is "number" in "my_randoms"? is numbers referring to the things in the range of "my_randoms"?
+    
+    if number in my_randoms:
+        the_numbers_match = True
 
-    # Iterate your random number list here
+    if the_numbers_match:
+        print(f'my_randoms list contains {number}')
+    else:
+        print(f'my_randoms list does not contain {number}')
 
     # Does my_randoms contain number? Change the boolean.
 
     # print(f'{number} is in the random list')
 
-#     name = "Joe"
-# if (name == "Steve"):
-#     print ("I feel great")
-# elif (name == "Joe"):
-#     print ("You got the better instructor")
-# else:
-#     print("I have a cold")
+ 
